@@ -92,12 +92,14 @@ $(".list-group").on("click", function() {
   textInput.trigger("focus");
 } );
 
+//editable field was un-focused
 $(".list-group").on("blur", "textarea", function() {
   // get the textarea's current value/text
   var text = $(this)
     .val()
     .trim();
-  //get teh parent's ul's id attribute
+
+  //get the parent's ul's id attribute
   var status = $(this)
     closest(".list-group")
     .attr("id")
@@ -170,10 +172,6 @@ $(".list-group").on("blur", "input[type='text']", function() {
   //replace input with time span element
   $(this).replaceWith(taskSpan);
 })
-
-
-
-
 
 // remove all tasks
 $("#remove-tasks").on("click", function() {
