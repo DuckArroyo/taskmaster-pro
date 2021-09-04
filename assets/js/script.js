@@ -41,6 +41,10 @@ var saveTasks = function () {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
 
+$("#modalDueDate").datepicker({
+  minDate: 1,
+});
+
 // enable draggable/sortable feature on list-group elements
 $(".card .list-group").sortable({
   // enable dragging across lists
@@ -182,12 +186,21 @@ $(".list-group").on("click", "span", function () {
   //swap out elements
   $(this).replaceWith(dateInput);
 
+  //enable jquery ui datepicker
+  dateInput.datepicker({
+    minDate: 1,
+    onClose: function () {
+      // when calendar is closed, force a "change" event on the `dateInput`
+      $(this).trigger("change");
+    },
+  });
+
   //automatically focus on new element
   dateInput.trigger("focus");
 });
 
 //value of due date was changed
-$(".list-group").on("blur", "input[type='text']", function () {
+$(".list-group").on("change", "input[type='text']", function () {
   //get current text
   var date = $(this).val().trim();
 
