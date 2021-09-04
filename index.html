@@ -13,6 +13,7 @@
 <body>
 
   <div class="row min-vh-100 no-gutters">
+
     <header class="col-12 col-lg-3 bg-dark text-light d-flex flex-column p-4 p-lg-3">
       <h1 class="text-center">Taskmaster Pro Edition</h1>
       <button id="create-task" class="btn btn-block btn-success" data-toggle="modal" data-target="#task-form-modal">Add
@@ -23,11 +24,55 @@
         laudantium sequi fugit officiis optio deleniti asperiores rem eius laborum maxime blanditiis culpa, quis iste?
       </p>
     </header>
+
     <main class="col-12 col-lg-9">
-      <div class="m-5">
-        <h2>To Do</h2>
-        <ul id="list-toDo" class="list-group"> </ul>
+
+      <div class="col-12 col-md-6 col-xl-3 mb-3">
+        <!--todo start-->
+        <div class="col-12">
+          <h2>To Do</h2>
+          <ul id="list-toDo" class="list-group"></ul>
+        </div>
+        <!--todo end-->
+
+        <!--todo in progress start-->
+        <div class="col-12 col-md-6 col-xl-3 mb-3">
+          <h2>In Progress</h2>
+            <ul id="list-in-progress" class="list-group">
+              <li class="list-group-item">
+                <span class="badge badge-primary badge-pill">05/28/2020</span>
+                <p class="m-1">Sample Task in progress</p>
+              </li>    
+            </ul>
+        </div>
+        <!--todo in progress end-->
+
+        <!--todo in review start-->
+        <div class="col-12 col-md-6 col-xl-3 mb-3">
+          <h2>In review</h2>
+          <ul id="list-inReview" class="list-group">
+            <li class="list-group-item">
+              <span class="badge badge-primary badge-pill">05/29/2020</span>
+              <p class="m-1">Sample task in review</p>
+            </li>
+          </ul>
+        </div>
+        <!--todo in review end-->
+
+        <!--todo done start-->
+        <div class="col-12 col-md-6 col-xl-3 mb-3">
+          <h2>Done</h2>
+          <ul id="list-done" class="list-group">
+            <li class="list-group-item">
+              <span class="badge badge-primary bedge-pill">05/30/2020</span>
+              <p class="m-1">Sample task that's done</p>
+            </li>
+          </ul>
+        </div>
+        <!--todo done end-->
+
       </div>
+
     </main>
   </div>
 
