@@ -3,9 +3,11 @@ var tasks = {};
 var createTask = function (taskText, taskDate, taskList) {
   // create elements that make up a task item
   var taskLi = $("<li>").addClass("list-group-item");
+
   var taskSpan = $("<span>")
     .addClass("badge badge-primary badge-pill")
     .text(taskDate);
+
   var taskP = $("<p>").addClass("m-1").text(taskText);
 
   // append span and p element to parent li
@@ -70,7 +72,7 @@ $(".card .list-group").sortable({
   tolerance: "pointer",
   helper: "clone",
   activate: function (event, ui) {
-    console.log("activate", this);
+    console.log(ui);
   },
   deactivate: function (event, ui) {
     $(this).removeClass("dropover");
@@ -179,11 +181,10 @@ $(".list-group").on("click", function () {
 //editable field was un-focused
 $(".list-group").on("blur", "textarea", function () {
   // get the textarea's current value/text
-  var text = $(this).val().trim();
+  var text = $(this).val();
 
   //get the parent's ul's id attribute
-  var status = $(this);
-  closest(".list-group").attr("id").replace("list-", "");
+  var status = $(this).closest(".list-group").attr("id").replace("list-", "");
 
   //get the task's position in the list of other li elements
   var index = $(this).closest(".list-group-item").index();

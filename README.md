@@ -1,6 +1,6 @@
 Start of file
 
-Personal notes - READ THROUGH 5.4.5
+Personal notes - READ THROUGH 5.
 
 ##To dos
 
