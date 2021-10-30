@@ -15,30 +15,6 @@ ul.list-group {
   min-height: 130px;
 }
 
-<<<<<<< HEAD
-=======
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Staatliches", sans-serif;
-}
-
-.dropover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.dropover-active {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
->>>>>>> 3e557459ab7d754c60ae802af7478ceca3718dbb
 .bottom-trash {
   opacity: 0;
   color: #f1f1f1;
@@ -49,19 +25,15 @@ h6 {
   background-color: rgba(234, 0, 39, 0.7);
 }
 
-<<<<<<< HEAD
 .bottom-trash-drag {
   transform: translateY(0);
   opacity: 1;
 }
 
-=======
->>>>>>> 3e557459ab7d754c60ae802af7478ceca3718dbb
 .bottom-trash-active {
   background-color: rgba(234, 0, 39, 1);
 }
 
-<<<<<<< HEAD
 .dropover {
   background: rgba(0, 0, 0, 0.3);
 }
@@ -70,8 +42,6 @@ h6 {
   background: rgba(0, 0, 0, 0.9);
 }
 
-=======
->>>>>>> 3e557459ab7d754c60ae802af7478ceca3718dbb
 .btn-add,
 .btn-save {
   background-color: #fa8bff;
@@ -83,16 +53,11 @@ h6 {
   );
   transition: all 0.5s ease-out;
   background-size: 1px 100px;
-<<<<<<< HEAD
   background-position: 0px -10px;
-=======
-  background-position: 0 -10px;
->>>>>>> 3e557459ab7d754c60ae802af7478ceca3718dbb
 }
 
 .btn-close,
 .btn-delete {
-<<<<<<< HEAD
   transition: all 0.5s ease-out;
   background-size: 1px 100px;
   background-position: 1px -10px;
@@ -104,15 +69,5 @@ h6 {
 .btn-add:hover,
 .btn-close:hover,
 .btn-delete:hover {
-=======
-  background-color: #ea0028;
-  background-image: linear-gradient(180deg, #ff9a8b 0%, #ea0028);
-  transition: all 0.5s ease-out;
-  background-size: 1px 100px;
-  background-position: 0 -10px;
-}
-
-:hover {
->>>>>>> 3e557459ab7d754c60ae802af7478ceca3718dbb
   background-position: 1px -50px;
 }
