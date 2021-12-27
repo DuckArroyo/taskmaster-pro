@@ -1,20 +1,25 @@
-Start of file
+# Taskmaster Pro
 
-Personal notes - READ THROUGH 5.
+Module 05
 
-##To dos
+[Github Pages](https://duckarroyo.github.io/taskmaster-pro)
 
-#Issues
+[Github Repository](https://github.com/DuckArroyo/taskmaster-pro)
 
-Title: Add due date handling
-**Description:**
+# Contributions by:
 
-- Add a calendar datepicker for setting due dates.
-- Conditionally highlight tasks that are near/overdue.
+DeveloperDuckArroyo
 
-Title: Customize/improve user experience
-**Description:**
+[Email](mailto:DeveloperDuckArroyo@gmail.com)
 
-- Periodically check if tasks are overdue.
-- Implement custom fonts and icons.
-- Customize UI colors.
+[Portfolio](https://github.com/DuckArroyo/portfolio)
+
+[React Portfolio](http://DuckArroyo.github.io/reactPortfolio)
+
+[GitHub](https://github.com/DuckArroyo)
+
+[Twitter @DevDuckArroyo](https://twitter.com/DevDuckArroyo)
+
+[LinkedIn](https://www.linkedin.com/in/duckarroyo)
+
+[CodePen](https://codepen.io/DeveloperDuckArroyo)
